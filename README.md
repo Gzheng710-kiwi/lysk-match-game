@@ -1,75 +1,100 @@
-<<<<<<< HEAD
-# lysk-match-game
-A React-based Match-3 puzzle game with basket mechanics, magic flowers, and star ratings. Match items to earn points and complete levels!
-=======
-# Getting Started with Create React App
+# Match Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A fun and interactive Match-3 puzzle game built with React. Select and match three or more identical items to eliminate them and earn points.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **7×7 Grid Gameplay**: Classic match-3 mechanics with a spacious grid
+- **Basket Starting Point**: All selections must start adjacent to the basket
+- **Magic Flowers**: Special 🌺 flowers that can transform into any item type
+- **Reshuffle System**: 3 chances to reshuffle the board when stuck
+- **Star Rating System**: Earn stars based on your score (1-3 stars)
+- **Progressive Difficulty**: Limited moves per level (8 moves for level 1)
+- **Smooth Animations**: Satisfying visual feedback when items are eliminated
 
-### `npm start`
+## How to Play
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Select Items**: Click items adjacent to the basket to start your selection
+2. **Build a Chain**: Continue clicking same-type items to extend your chain (horizontally, vertically, or diagonally)
+3. **Match & Eliminate**: Select 3 or more items and click "消除" (Eliminate) to remove them
+4. **Earn Points**: Each eliminated item gives 100 points
+5. **Pass the Level**: Get at least 1000 points (1 star) to pass the level
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Special Mechanics
 
-### `npm test`
+- **Magic Flowers (🌺)**: Select a magic flower with another item type to transform it and include it in your match
+- **Reshuffle (🔀)**: Shuffle the board (only available when basket has no adjacent matches). You have 3 chances per level
+- **Basket Movement**: The basket moves to the last eliminated item's position after each match
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+1. Clone the repository:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+git clone https://github.com/Gzheng710-kiwi/lysk-match-game.git
+cd match-game
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Install dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm install
+```
 
-### `npm run eject`
+3. Start the development server:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Project Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+match-game/
+├── src/
+│   ├── App.js          # Main game component
+│   ├── index.js        # React entry point
+│   └── ...
+├── public/
+├── package.json
+└── README.md
+```
 
-## Learn More
+## Technologies Used
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **React** - UI library
+- **JavaScript (ES6+)** - Game logic
+- **CSS** - Styling
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Game Rules
 
-### Code Splitting
+- You have **8 moves** per level
+- Match **3+ items** of the same type to eliminate them
+- Items fall from above when spaces are created
+- Magic flowers have a **10% spawn rate** when items are eliminated
+- The basket position changes to the last eliminated item
+- **Win condition**: Achieve at least **1000 points** (1 star) before moves run out
+- **Lose condition**: Run out of moves before reaching 1000 points
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Future Enhancements
 
-### Analyzing the Bundle Size
+- [ ] Multiple levels with increasing difficulty
+- [ ] Power-ups and special abilities
+- [ ] Sound effects and background music
+- [ ] Leaderboard system
+- [ ] Mobile optimization
+- [ ] Different game themes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Author
 
-### Making a Progressive Web App
+Gzheng710-kiwi
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## License
 
-### Advanced Configuration
+This project is open source and available under the MIT License.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> 969d890 (Initial commit: Match game project)
+**Enjoy the game! **
